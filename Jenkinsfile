@@ -28,7 +28,7 @@ pipeline{
     stage('Upload War File To Artifactory'){
       agent any
       steps{
-        sh 'mecho Uploaded War file to Artifactory'
+        sh 'echo Uploaded War file to Artifactory'
       }
     }
     stage('Deploy'){
