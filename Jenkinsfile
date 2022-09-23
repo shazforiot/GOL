@@ -51,3 +51,4 @@ sudo docker container run -itd --name webserver$BUILD_NUMBER -p 8080 webimage:$B
     }
   }
 }
+}
