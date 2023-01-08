@@ -5,7 +5,14 @@ pipeline{
       agent any
       steps{
         sh 'mvn compile'
-      }       
+      }  
+                  post {
+                success {
+                    echo "Now Archiving."
+                    archiveArtifacts artifacts: '**/*.war'
+                }
+            }
+
     }
     stage('Code Quality'){
       agent any
